@@ -1,0 +1,9 @@
+{% extends "posts/post_base.html" %}
+
+{% block post_content %}
+    <div class="col-md-8">
+        {# all the heavy lifting is done inside _post.html so just inject this #}
+        {% include "posts/_post.html" %}
+    </div>
+
+{% endblock %}
